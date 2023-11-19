@@ -32,9 +32,9 @@ if __name__ == '__main__':
     prompt2_features = extract_text_features([prompt2])
     prompt3_features = extract_text_features([prompt3])
 
-    model_perception = load_model("perception_model\model_total")
-    model_alignment_without_stair = load_model("alignment_model\model_total")
-    model_alignment_with_stair = load_model("alignment_model\model_withStair")
+    model_perception = load_model("model2_total")
+    model_alignment_without_stair = load_model("model_total")
+    model_alignment_with_stair = load_model("model_withStair")
 
     # 使用加载的模型进行预测
     perception_pred = model_perception.predict([image_features, augmented_image_features])
